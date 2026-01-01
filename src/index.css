@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-accent font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-glass backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-surface/50 backdrop-blur-xl border border-white/5 shadow-xl;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(204, 255, 0, 0.5);
+  }
+}
